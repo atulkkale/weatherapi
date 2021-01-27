@@ -45,25 +45,31 @@ searchinputbox.addEventListener("keypress", function(e){ //This function was cal
 
                 switch(clouds) { // This switch satatement make background image of body daidynamic.
                   case "Clear":
-                    document.body.style.backgroundImage = "url(../images/clear.webp)";
+                    document.body.style.backgroundImage = "url(assets/images/clear.webp)";
                     break;
                   case "Clouds":
-                    document.body.style.backgroundImage = "url(../images/cloudy.webp)";
+                    document.body.style.backgroundImage = "url(assets/images/cloudy.webp)";
                     break;
                   case "Rain":
-                    document.body.style.backgroundImage = "url(../images/rain.jpg)";
+                    document.body.style.backgroundImage = "url(assets/images/rain.jpg)";
                     break;
                   case "Snow":
-                    document.body.style.backgroundImage = "url(../images/snow.jpg)";
+                    document.body.style.backgroundImage = "url(assets/images/snow.jpg)";
                     break;
                   case "Haze":
-                    document.body.style.backgroundImage = "url(../images/haze.png)";
+                    document.body.style.backgroundImage = "url(assets/images/haze.png)";
+                    break;
+                  case "Mist":
+                    document.body.style.backgroundImage = "url(assets/images/haze.png)";
                     break;
                   case "Thunderstorm":
-                    document.body.style.backgroundImage = "url(../images/thunderstorm.jpg)";
+                    document.body.style.backgroundImage = "url(assets/images/thunderstorm.jpg)";
+                    break;
+                  case "Drizzle":
+                    document.body.style.backgroundImage = "url(assets/images/drizzle.jpg)";
                     break;
                   default:
-                    document.body.style.backgroundImage = "url(../images/background.jpg)";
+                    document.body.style.backgroundImage = "url(assets/images/background.jpg)";
                 }
             }else{
                 err.textContent = "There was a problem with the request. Please enter proper city name.";

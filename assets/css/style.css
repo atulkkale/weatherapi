@@ -82,6 +82,7 @@ body{
   background-size: cover;
   font-family: Helvetica, sans-serif;
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .wrapper{
@@ -92,9 +93,10 @@ body{
   text-align: center;
   background-color: rgba(240, 248, 255, 0.6);
   padding: 30px 20px;
+  max-height: 440px;
 }
 
-.inputweather input{
+.weather_inputbox{
   background-color: rgba(255, 255, 255, 0.6);
   border: none;
   outline: none;
@@ -106,23 +108,31 @@ body{
   font-size: 25px;
 }
 
-.weather_info{
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 50px 0 ;
+.weather_inputbox:focus{
+  background-color: #fff;
 }
 
-.city,.date,.weather{
+.weather_body{
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 50px 0 ;
+  display: none;
+}
+
+.city,.date,.weather,.img,.min_max{
   font-size: 20px;
   color: #641b1b;
   text-transform: capitalize;
-  font-weight: 600;
   margin-bottom: 15px;
+}
+
+.city,.date{
+  font-weight: 600;
 }
 
 .temp{
   font-size: 50px;
   font-weight:600;
   color: #641b1b;
-  text-transform: uppercase;
   margin: 15px 0;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.3);
 }

@@ -32,23 +32,29 @@
 <body>
   <div class="container">
     <main>
-      <div class="wrapper">
-        <div class="inputweather">
-          <input type="text" class="weather_inputbox" placeholder="Enter city name...">
-        </div>
-        
-        <div class="weather_info">
-          <div class="weather_details">
-            <div class="city">mumbai</div>
-            <div class="date">25 jan 2020</div>
-          </div>
 
-          <div class="weather_status">
-            <div class="temp">34&deg;c</div>
-            <div class="weather">sunny</div>
+      <!-- main section starts here -->
+      <div class="wrapper">
+          <div class="searchinputbox" id="searchinputbox">
+            <input type="text" class="weather_inputbox" id="weather_inputbox" placeholder="Enter city name...">
+            <p id="error">error massage</p>
           </div>
-        </div>
+          
+          <div class="weather_body" id="weather_body">
+            <div class="location_details">
+              <div class="city" id="city">mumbai, in</div>
+              <div class="date" id="date">27 jan (wednesday), 2020</div>
+            </div>
+
+            <div class="weather_status">
+              <div class="temp" id="temp">34&deg;c</div>
+              <div class="min_max" id="min_max">32&deg;C (min) / 34&deg;C (max)</div>
+              <div class="weather" id="weather">Clear</div>
+              <div class="img" id="img">weather image</div>
+            </div>
+          </div>
       </div>
+
     </main>
   </div>
 

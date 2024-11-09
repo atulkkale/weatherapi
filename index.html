@@ -6,19 +6,12 @@
 <head>
  
   <meta charset="utf-8">
-
-  <title>Client | Page Title</title>
-  
+  <title>Weather api</title>
   <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
   <meta name="description" lang="en" content="">
-  
   <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
-  <meta name="keywords" lang="en" content="">
+  <meta name="keywords" lang="en" content="weather, today weather, cloudy, sunny">
   
-  <!-- View-port Basics: http://mzl.la/VYREaP -->
-  <!-- This meta tag is used for mobile device to display the page without any zooming,
-       so how much the device is able to fit on the screen is what's shown initially. 
-       Remove comments from this tag, when you want to apply media queries to the website. -->
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
   
   <!-- To adhear no-cache for Chrome -->
@@ -30,18 +23,40 @@
   <link rel="shortcut icon" href="favicon.ico" />
 
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
 
-  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->	
-  <!--[if lt IE 9]>  
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
-  <![endif]-->
+
 
 </head>
 
 <body>
+  <div class="container">
+    <main>
 
-<script src="js/vendors/jquery-1.8.3.min.js"></script>
-<script src="js/script.js"></script>
+      <!-- main section starts here -->
+      <div class="wrapper">
+          <div class="searchinputbox" id="searchinputbox">
+            <input type="text" class="weather_inputbox" id="weather_inputbox" placeholder="Enter city name...">
+            <p id="error">error massage</p>
+          </div>
+          
+          <div class="weather_body" id="weather_body">
+            <div class="location_details">
+              <div class="city" id="city">mumbai, in</div>
+              <div class="date" id="date">27 jan (wednesday), 2020</div>
+            </div>
+
+            <div class="weather_status">
+              <div class="temp" id="temp">34&deg;c</div>
+              <div class="min_max" id="min_max">32&deg;C (min) / 34&deg;C (max)</div>
+              <div class="weather" id="weather">Clear</div>
+            </div>
+          </div>
+      </div>
+
+    </main>
+  </div>
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>

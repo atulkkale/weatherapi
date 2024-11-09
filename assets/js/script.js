@@ -79,14 +79,14 @@ searchinputbox.addEventListener("keypress", function(e){ //This function was cal
   }
 })
 
-function dateManage(datearg){ // This function returns current date.
-  var days = ["Sunday","Monday","Tuesday","Wednesday","Friday","Saturday"];
+function dateManage(dateArg){ // This function returns current date.
+  var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
   var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
-  var year = datearg.getFullYear();
-  var date = datearg.getDate();
-  var month = months[datearg.getMonth()];
-  var day = days[datearg.getDay()];
+  var year = dateArg.getFullYear();
+  var date = dateArg.getDate();
+  var month = months[dateArg.getMonth()];
+  var day = days[dateArg.getDay()];
 
   return date + " " + month + " (" + day + "), " + year;
 }
